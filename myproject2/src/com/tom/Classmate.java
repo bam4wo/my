@@ -11,6 +11,7 @@ public class Classmate {
 		this.art = art;
 	}
 	
+	
 	public void print() {
 		System.out.println(name+"\t"+chinese+"\t"+art+"\t"+(chinese+art)/2);
 	}
