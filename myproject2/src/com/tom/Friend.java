@@ -11,7 +11,6 @@ public class Friend {
 		this.number = number;
 	}
 	
-	
 	public void print() {
 		System.out.println(blood+"\t"+age+"\t"+number+"\t"+(age+number)*2);
 	}
