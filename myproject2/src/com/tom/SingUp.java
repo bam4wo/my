@@ -11,10 +11,15 @@ public class SingUp {
 		boolean adult = line.equalsIgnoreCase("y");
 		Member member = new Member(adult);
 		if (member.adult) {
-			member.starInput();
-		}else {
+			member.starInpot();
+		}else{
 			System.out.println("bye");
 		}
+	 
+		System.out.println("gender(boy/girl)");
+		String sex1= scanner.nextLine();
+		boolean gender = sex1.equalsIgnoreCase("boy") || sex1.equalsIgnoreCase("girl");
+		Sex sex = new Sex(gender);
 		
 				
 		
