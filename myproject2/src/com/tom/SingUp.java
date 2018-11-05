@@ -20,7 +20,11 @@ public class SingUp {
 		String sex1= scanner.nextLine();
 		boolean gender = sex1.equalsIgnoreCase("boy") || sex1.equalsIgnoreCase("girl");
 		Sex sex = new Sex(gender);
-		
+		if(sex.gender) {
+			System.out.println("ya");
+		}else{
+			System.out.println("hey");
+		}
 				
 		
 	}

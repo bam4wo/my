@@ -2,6 +2,8 @@ package com.www;
 
 public class Ticket {
 	double price;
+	int hour;
+	int minute;
 	
 	public Ticket(double price) {
 		this.price = price;
@@ -16,5 +18,8 @@ public class Ticket {
 		double slow = price/2+50;
 		return slow;
 	}
-
+	public Ticket(int hour, int minute) {
+		this.hour = hour;
+		this.minute = minute;
+	}
 }

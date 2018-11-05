@@ -12,6 +12,11 @@ public class Car {
 		Ticket q = new Ticket(price);
 		Ticket s = new Ticket(price);
 		System.out.printf("%.1f price = %.1f quick = %.1f slow",price ,q.quick() ,s.slow());
+		scanner.nextInt();
+		System.out.println("please enter hour and minute");
+		int hour = scanner.nextInt();
+		int minute = scanner.nextInt();
+		System.out.printf("the current is %d : %d", hour, minute);
 	}
 
 }
