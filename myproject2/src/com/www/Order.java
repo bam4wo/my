@@ -6,7 +6,7 @@ public class Order {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner scanner = new Scanner(System.in);
+		/*Scanner scanner = new Scanner(System.in);
 		while(true){
 				System.out.print("Please enter number of tickets:");
 				int a = scanner.nextInt();
@@ -19,9 +19,20 @@ public class Order {
 				    System.out.printf("Total tickets:%d Round-trip:%d Total:%d \n", a, b, s.singal()+t.two());
 			    }else{
 				   break;
-			    }
-			
+			    }	
+		}*/
+		Scanner scanner = new Scanner(System.in);
+		while(true) {
+			System.out.print("Please enter number of tickets:");
+			int totalt = scanner.nextInt();
+			System.out.print("How many round-trip tickets:");
+			int ticket = scanner.nextInt();
+			System.out.println("Total tickets:"+ totalt);
+			System.out.println("Round-trip:" + ticket );
+			Ticket a = new Ticket(1);
+			System.out.println("Total:" + a.total() );
 		}
+		
 		
 	}
 

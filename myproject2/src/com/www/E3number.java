@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class E3number {
 	public static void main(String[] args) {
-		Random random = new Random();
+		/*Random random = new Random();
 		int secret = random.nextInt((10)+1);
 		System.out.println(secret);
 		Scanner scanner = new Scanner(System.in);
@@ -20,7 +20,8 @@ public class E3number {
 				System.out.printf("Great! The secret number is %d",secret);
 			    break;
 			}
-		}
+		}*/
 	}
+	
 
 }
