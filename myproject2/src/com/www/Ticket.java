@@ -22,4 +22,21 @@ public class Ticket {
 		this.hour = hour;
 		this.minute = minute;
 	}
+	
+    int ticket ;
+	
+	public Ticket(int ticket){
+		this.ticket = ticket;
+		
+	}
+	
+	public int singal(){
+		int singal = 1000*ticket;
+		return singal;
+	}
+	
+	public int two(){
+		int two = (2000)*9/10*ticket;
+		return two;
+	}
 }
