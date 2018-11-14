@@ -22,15 +22,22 @@ public class Order {
 			    }	
 		}*/
 		Scanner scanner = new Scanner(System.in);
-		while(true) {
+		int ticket = 1; 
+		while(ticket != 0) {
 			System.out.print("Please enter number of tickets:");
 			int totalt = scanner.nextInt();
-			System.out.print("How many round-trip tickets:");
-			int ticket = scanner.nextInt();
-			System.out.println("Total tickets:"+ totalt);
-			System.out.println("Round-trip:" + ticket );
-			Ticket a = new Ticket(1);
-			System.out.println("Total:" + a.total() );
+			scanner.nextLine();
+			if(ticket != -1) {
+				System.out.print("How many round-trip tickets:");
+				int tickett = scanner.nextInt();
+				System.out.println("Total tickets:"+ totalt);
+				System.out.println("Round-trip:" + tickett );
+				int t = totalt - tickett;
+				Ticket a = new Ticket(tickett);
+				Ticket b = new Ticket(t);
+				System.out.println("Total:" + b.all());
+			}
+			
 		}
 		
 		

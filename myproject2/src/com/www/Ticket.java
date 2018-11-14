@@ -38,19 +38,17 @@ public class Ticket {
 		int two = (2000)*9/10*ticket;
 		return two;
 	}*/
-	int ticket;
-	int rticket; 
-	int all;
-	
-	public Ticket(int ticket , int rticket , int all){
-		this.ticket = ticket;
+	int pricet = 1000;
+	boolean rticket;
+	public Ticket(boolean rticket) {
 		this.rticket = rticket;
-		this.all = all;
-		rticket = all - ticket;
 	}
 	
-	public double total() {
-		double total = 1000*ticket + 2000*0.9f*rticket;
+	public int all() {
+		int total = pricet;
+		if(rticket) {
+			total = (int)(pricet*2*0.9f);
+		}
 		return total;
 	}
-}
+}	
