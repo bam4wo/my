@@ -5,8 +5,18 @@ import java.util.Random;
 public class PokerGame {
 
 	public static void main(String[] args) {
+		int[] n = new int[10];
+		Card[] c = new Card[10];
+		System.out.println(n[0]);
+		c[0] = new Card(45);
+		System.out.println(c[0].get());
+		
+		Poker poker = new Poker();
+		poker.shuffle();
+		poker.print();
+		
 		// TODO Auto-generated method stub
-		int[] flowers = {0x2663, 0x2665, 0x2660, 0x2666};
+		/*int[] flowers = {0x2663, 0x2665, 0x2660, 0x2666};
 		int[] nums = new int[5];
 		nums[0] = 76;
 		nums[4] = 98;
@@ -38,7 +48,7 @@ public class PokerGame {
 		case 3:
 			c = 'H';
 			break;
-		}
+		}*/
 		
 	}
 
