@@ -5,7 +5,8 @@ public class StringTaster {
 	public static void main(String[] args) {
 		String s = "Hello brooo";
 		System.out.println(s.substring(5));
-		System.out.println(s.substring(4, 8));
+		System.out.println(s.substring(4, 5));
+		
 		
 		for(int i = s.length()-1; i>=0; i--){
 			System.out.print(s.charAt(i));
