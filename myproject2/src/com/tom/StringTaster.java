@@ -25,6 +25,16 @@ public class StringTaster {
     	int n = Integer.parseInt("55");
     	System.out.println(n);
     	
+    	String s1 = new String("ABC");
+    	String s2 = new String("ABC");
+    	System.out.println(s1==s2);
+    	boolean c  = s1.equals(s2);
+    	System.out.println(c);
+    	
+    	String s11 = "abc";
+    	String s22 = "abc";
+    	System.out.println(s11==s22);
+    	
 	}
 
 }
