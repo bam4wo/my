@@ -9,7 +9,7 @@ public class Cards {
 	}
 	
 	public String get() {
-		String a = value%13+1 + " " + suits[value/13];
+		String a = value%13+1+""+suits[value/13];
 		return a;
 	}
 }
